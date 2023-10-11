@@ -9,6 +9,7 @@ export default function Login({navigation}){
     const [password, setPassword] = useState("");
 
     const onHandleLogin = () => {
+        console.log('teste');
         if(email !== "" && password !== "") {
             signInWithEmailAndPassword(auth, email, password)
             .then(() => console.log("Login com sucesso!"))
