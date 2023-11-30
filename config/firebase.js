@@ -2,23 +2,25 @@ import {initializeApp} from 'firebase/app'
 import {initializeAuth, getReactNativePersistence} from 'firebase/auth'
 import { ReactNativeAsyncStorage } from '@react-native-async-storage/async-storage'
 import {getFirestore} from 'firebase/firestore'
-import { Constants } from 'expo-constants'
 
 // Config do Firebase
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBuSbO6ar9Bq6qHp3iRqpWBbxiWLDxm29o",
-    authDomain: "chatapp-c5076.firebaseapp.com",
-    projectId: "chatapp-c5076",
-    storageBucket: "chatapp-c5076.appspot.com",
-    messagingSenderId: "2256471072",
-    appId: "1:2256471072:web:b8e1362fdc4559e839a845"
+    apiKey: "AIzaSyAVu2Tl4rYKKVjV_MyT8eU-g-s53ejvALU",
+    authDomain: "chatexpress-4db76.firebaseapp.com",
+    projectId: "chatexpress-4db76",
+    storageBucket: "chatexpress-4db76.appspot.com",
+    messagingSenderId: "1032030260134",
+    appId: "1:1032030260134:web:5dd9149037866e3ae9dd67"
 };
 
 // Inicializando o Firebase
 
 const app = initializeApp(firebaseConfig);
-export const auth = initializeAuth(app, {
+const auth = initializeAuth(app, {
     persistence: getReactNativePersistence(ReactNativeAsyncStorage)
 });
-export const database = getFirestore();
+const database = getFirestore(app);
+
+
+export{auth, database}

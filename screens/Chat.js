@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useLayoutEffect, useCallback } from 'react';
 import { TouchableOpacity, Text} from 'react-native';
-import { Avatar, GiftedChat } from 'react-native-gifted-chat';
+import { GiftedChat } from 'react-native-gifted-chat';
 import { collection, addDoc, orderBy, query, onSnapshot } from 'firebase/firestore';
 import { signOut } from 'firebase/auth';
 import { auth, database } from '../config/firebase';
@@ -69,13 +69,12 @@ export default function Chat() {
       messages={messages}
       onSend={messages => onSend(messages)}
       user={{ 
-        _id: auth?.currentUser?.email,
-        avatar: ''
+        _id: auth?.currentUser?.email
       }}
       messagesContainerStyle={{
         backgroundColor: '#fff2'
       }}
-      showUserAvatar={false}
+      showUserAvatar={true}
     />
   );
 
