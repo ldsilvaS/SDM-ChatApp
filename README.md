@@ -9,12 +9,11 @@ Projeto para cadeira de Sistemas distribuídos e mobile. Esse é apenas um prot�
 1. Instale o Expo Go na Play Store ou App Store.
 
 # Clonando o repositório #
-1. Clone o repositório para a sua maquina e exclua a pasta /expo e /node_modules
+1. Clone o repositório para a sua maquina.
 
 # Iniciando o aplicativo no PC #
 1. Se a pasta estiver zipada, extraia e abra a ultima pasta antes de entrar no projeto, com o Visual Studio Code.
-2. Exclua as pastas /expo e /node_modules
-3. Inicie o terminal
+2. Inicie o terminal
 
 # Comandos no terminal #
 ```
