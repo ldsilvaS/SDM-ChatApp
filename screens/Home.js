@@ -10,6 +10,7 @@ const Home = () => {
 
     const [avatar, setAvatar] = useState("")
     const [visivel, setVisivel] = useState(false)
+    const [seletorAvatar, setSeletorAvatar] = useState("")
 
     const avatars = [
         require('../assets/avatar1.png'),
